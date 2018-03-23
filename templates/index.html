@@ -1,0 +1,12 @@
+<html>
+	<head>
+		<title>Story Board</title>
+	</head>
+	<body>
+		<a href = '/write' id='write' style='float:right'><img src='static/images/write-static.gif' height='60' width='60'/></a>
+		{% for row in rows %}
+		<p><a href="/{{ row[0] }}">{{ row[1] }}</a>
+		{% endfor %}
+	</body>
+	
+</html>
